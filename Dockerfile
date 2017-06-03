@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM ubuntu:rolling
 RUN apt update && apt -y upgrade \
     && apt -y install build-essential libtool gcc g++ make cmake cmake-data openssl clang \
     && apt -y install libssl-dev libmysqlclient-dev libreadline-dev zlib1g-dev libbz2-dev libzmq3-dev libace-dev libncurses5-dev \
